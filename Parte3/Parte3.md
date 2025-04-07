@@ -100,7 +100,7 @@ Este sitio presenta intencionadamente un certificado cuya fecha de validez ha pa
 
 **Resultados del Análisis (SSL Labs):**
 
-![][image3]  
+![](Imagenes/3.png) 
 **Explicación de la Invalidez:**
 
 SSL Labs detecta que la fecha actual es posterior a la fecha "Valid until" (No después) del certificado y lo marca explícitamente como **"Certificate expired"**. Un certificado expirado no ofrece garantías sobre la identidad del sitio ni la seguridad de la clave privada asociada, por lo que es rechazado.
@@ -113,7 +113,7 @@ SSL Labs detecta que la fecha actual es posterior a la fecha "Valid until" (No d
 Este sitio sirve un certificado que es técnicamente válido (emitido por CA confiable, no expirado) pero *no* para el nombre de dominio https://alberche-dream.com/al que se está accediendo.
 
 **Resultados del Análisis (SSL Labs):**  
-![][image4]
+![](Imagenes/mismatch.png)
 
 **Explicación de la Invalidez:**
 
@@ -136,7 +136,7 @@ El texto proporcionado para este caso también menciona que, dependiendo del nav
 Este sitio utiliza intencionadamente un certificado firmado por sí mismo, lo cual es análogo al certificado generado en la Parte 2 de este proyecto (vía simulada) y sirve para demostrar problemas de confianza.
 
 **Resultados del Análisis (SSL Labs):**  
-![][image5]
+![](Imagenes/emisor%20no%20cofiable.png)
 
 **Explicación de la Invalidez:**
 
